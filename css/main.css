@@ -1,0 +1,405 @@
+html {
+  font-size: 62.5%;
+}
+
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: auto;
+  font-family: 'Rubik', Arial, Helvetica, sans-serif;
+  background-color: #0f1424;
+}
+
+.comp {
+  width: Min(90%, 70em);
+  margin: 2em auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  gap: 3em;
+}
+
+.profile-container {
+  width: Min(100%, 60em);
+  background-color: #1c1f4a;
+  border-radius: 10px;
+  grid-area: profile;
+}
+
+.profile-container .profile {
+  width: 100%;
+  border-radius: 10px;
+  background-color: #7536d3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3em;
+}
+
+.profile-container .profile .profile-img {
+  width: Min(50%, 7em);
+  margin-right: 2em;
+}
+
+.profile-container .profile .profile-img img {
+  width: 100%;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.profile-container .profile .profile-info {
+  text-align: left;
+  color: #fff;
+}
+
+.profile-container .profile .profile-info h3 {
+  color: #bdc1ff;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.profile-container .profile .profile-info h1 {
+  font-size: 2.2rem;
+  font-weight: 300;
+}
+
+.profile-container .time-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 2em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4em;
+  color: #6f76c8;
+}
+
+.profile-container .time-container h2 {
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.profile-container .time-container .activeTime {
+  color: #fff;
+}
+
+.track-container {
+  width: Min(100%, 60em);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.track-container .bg-img {
+  width: Min(50%, 10em);
+  display: block;
+  margin-left: auto;
+  padding: 2em;
+  background-origin: content-box;
+}
+
+.track-container .track-name-time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  background-color: #1c1f4a;
+  padding: 2em;
+  color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  gap: 1.5em;
+}
+
+.track-container .track-name-time .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.track-container .track-name-time .name h2 {
+  font-size: 1.8rem;
+}
+
+.track-container .track-name-time .name img {
+  height: 100%;
+}
+
+.track-container .track-name-time .name img:hover {
+  cursor: pointer;
+}
+
+.track-container .track-name-time .time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.track-container .track-name-time .time h1 {
+  font-weight: 300;
+  font-size: 3rem;
+}
+
+.track-container .track-name-time .time h3 {
+  font-weight: 300;
+  color: #bdc1ff;
+}
+
+.work {
+  background-color: #ff8c66;
+  grid-area: work;
+}
+
+.work-bg-img {
+  background: url(/images/icon-work.svg) no-repeat scroll right center;
+}
+
+.play {
+  background-color: #56c2e6;
+  grid-area: play;
+}
+
+.play-bg-img {
+  background: url(/images/icon-play.svg) no-repeat scroll right center;
+}
+
+.study {
+  background-color: #ff5c7c;
+  grid-area: study;
+}
+
+.study-bg-img {
+  background: url(/images/icon-study.svg) no-repeat scroll right center;
+}
+
+.exercise {
+  background-color: #4acf81;
+  grid-area: exercise;
+}
+
+.exercise-bg-img {
+  background: url(/images/icon-exercise.svg) no-repeat scroll right center;
+}
+
+.social {
+  background-color: #7536d3;
+  grid-area: social;
+}
+
+.social-bg-img {
+  background: url(/images/icon-social.svg) no-repeat scroll right center;
+}
+
+.selfcare {
+  background-color: #f1c65b;
+  grid-area: selfcare;
+}
+
+.selfcare-bg-img {
+  background: url(/images/icon-self-care.svg) no-repeat scroll right center;
+}
+
+@media only screen and (min-width: 1000px) {
+  .work {
+    background-color: #ff8c66;
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: work;
+  }
+  .play {
+    background-color: #56c2e6;
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: play;
+  }
+  .study {
+    background-color: #ff5c7c;
+    -ms-grid-row: 1;
+    -ms-grid-column: 4;
+    grid-area: study;
+  }
+  .exercise {
+    background-color: #4acf81;
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: exercise;
+  }
+  .social {
+    background-color: #7536d3;
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    grid-area: social;
+  }
+  .selfcare {
+    background-color: #f1c65b;
+    -ms-grid-row: 2;
+    -ms-grid-column: 4;
+    grid-area: selfcare;
+  }
+  .comp {
+    width: Min(90%, 120em);
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 'profile work play study' 'profile exercise social selfcare';
+  }
+  .profile-container {
+    width: Min(100%, 60em);
+    height: 100%;
+    background-color: #1c1f4a;
+    border-radius: 10px;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: profile;
+  }
+  .profile-container .profile {
+    width: 100%;
+    border-radius: 10px;
+    background-color: #7536d3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 3em 3em 8em 3em;
+  }
+  .profile-container .profile .profile-img {
+    width: Min(50%, 7em);
+    margin-bottom: 2em;
+  }
+  .profile-container .profile .profile-img img {
+    width: 100%;
+    border-radius: 50%;
+    border: 2px solid #fff;
+  }
+  .profile-container .profile .profile-info {
+    text-align: left;
+    color: #fff;
+  }
+  .profile-container .profile .profile-info h3 {
+    color: #bdc1ff;
+    font-size: 1.4rem;
+    font-weight: 300;
+  }
+  .profile-container .profile .profile-info h1 {
+    font-size: 2.8rem;
+    font-weight: 300;
+  }
+  .profile-container .time-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    padding: 3em;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 3em;
+    color: #6f76c8;
+  }
+  .profile-container .time-container h2 {
+    font-weight: 300;
+    cursor: pointer;
+  }
+  .profile-container .time-container .activeTime {
+    color: #fff;
+  }
+  .track-container {
+    width: Min(100%, 60em);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .track-container .track-name-time {
+    gap: 3em;
+  }
+  .track-container .track-name-time .time {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 1em;
+  }
+  .track-container .track-name-time .time h1 {
+    font-weight: 300;
+    font-size: 4rem;
+  }
+  .track-container .track-name-time .time h3 {
+    font-weight: 300;
+    color: #bdc1ff;
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+</head>
+<body>
+
+  <main class="comp">
+
+    <div class="profile-container">
+
+      <div class="profile">
+        <div class="profile-img">
+          <img src="images/image-jeremy.png" alt="Image of a man">
+        </div>
+        <div class="profile-info">
+          <h3>Report for</h2>
+          <h1>Jeremy Robson</h1>
+        </div>
+      </div>
+
+      <div class="time-container">
+        <h2 id="daily">Daily</h2>
+        <h2 id="weekly" class="activeTime">Weekly</h2>
+        <h2 id="monthly">Monthly</h2>
+      </div>
+
+    </div>
+
+    <div class="track-container work">
+
+      <div class="container-bg-img">
+        <div class="bg-img work-bg-img" id="work-img" alt="work icon"></div>
+      </div>
+
+        <div class="track-name-time">
+          <div class="name">
+            <h2>Work</h2>
+            <img src="images/icon-ellipsis.svg" alt="ellipsis">
+          </div>
+
+          <div class="time" id="timeWork">
+            <h1><span>32</span>hrs</h1>
+            <h3>Last Week - <span>36</span>hrs</h3>
+          </div>
+        </div>
+
+    </div>
+
+    <div class="track-container play">
+
+      <div class="container-bg-img">
+        <div class="bg-img play-bg-img" id="work-img" alt="work icon"></div>
+      </div>
+
+        <div class="track-name-time">
+          <div class="name">
+            <h2>Work</h2>
+            <img src="images/icon-ellipsis.svg" alt="ellipsis">
+          </div>
+
+          <div class="time" id="timePlay">
+            <h1><span>10</span>hrs</h1>
+            <h3>Last Week - <span>8</span>hrs</h3>
+          </div>
+        </div>
+
+    </div>
+
+    <div class="track-container study">
+
+      <div class="container-bg-img">
+        <div class="bg-img study-bg-img" id="work-img" alt="work icon"></div>
+      </div>
+
+        <div class="track-name-time">
+          <div class="name">
+            <h2>Work</h2>
+            <img src="images/icon-ellipsis.svg" alt="ellipsis">
+          </div>
+
+          <div class="time" id="timeStudy">
+            <h1><span>4</span>hrs</h1>
+            <h3>Last Week - <span>7</span>hrs</h3>
+          </div>
+        </div>
+
+    </div>
+
+    <div class="track-container exercise">
+
+      <div class="container-bg-img">
+        <div class="bg-img exercise-bg-img" id="work-img" alt="work icon"></div>
+      </div>
+
+        <div class="track-name-time">
+          <div class="name">
+            <h2>Work</h2>
+            <img src="images/icon-ellipsis.svg" alt="ellipsis">
+          </div>
+
+          <div class="time" id="timeExercise">
+            <h1><span>4</span>hrs</h1>
+            <h3>Last Week - <span>5</span>hrs</h3>
+          </div>
+        </div>
+
+    </div>
+
+    <div class="track-container social">
+
+      <div class="container-bg-img">
+        <div class="bg-img social-bg-img" id="work-img" alt="work icon"></div>
+      </div>
+
+        <div class="track-name-time">
+          <div class="name">
+            <h2>Work</h2>
+            <img src="images/icon-ellipsis.svg" alt="ellipsis">
+          </div>
+
+          <div class="time" id="timeSocial">
+            <h1><span>5</span>hrs</h1>
+            <h3>Last Week - <span>10</span>hrs</h3>
+          </div>
+        </div>
+
+    </div>
+
+    <div class="track-container selfcare">
+
+      <div class="container-bg-img">
+        <div class="bg-img selfcare-bg-img" id="work-img" alt="work icon"></div>
+      </div>
+
+        <div class="track-name-time">
+          <div class="name">
+            <h2>Work</h2>
+            <img src="images/icon-ellipsis.svg" alt="ellipsis">
+          </div>
+
+          <div class="time" id="timeSelfcare">
+            <h1><span>2</span>hrs</h1>
+            <h3>Last Week - <span>2</span>hrs</h3>
+          </div>
+        </div>
+
+    </div>
+
+  </main>
+
+  <script type="text/javascript" src="data.json"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
