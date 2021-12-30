@@ -11,12 +11,21 @@ const timeSocial = document.getElementById('timeSocial')
 const timeSelfcare = document.getElementById('timeSelfcare')
 
 
+const time = {
+  work: document.getElementById('timeWork'),
+  play: document.getElementById('timePlay'),
+  study: document.getElementById('timeStudy'),
+  exercise: document.getElementById('timeExercise'),
+  social: document.getElementById('timeSocial'),
+  selfcare: document.getElementById('timeSelfcare')
+}
+
 daily.addEventListener('click', switchIt)
 weekly.addEventListener('click', switchIt)
 monthly.addEventListener('click', switchIt)
 
 
-let dataJson = `[
+let dataJson = [
     {
       "title": "Work",
       "timeframes": {
@@ -119,11 +128,7 @@ let dataJson = `[
         }
       }
     }
-  ]`
-
-let data = JSON.parse(dataJson)
-
-console.log(data)
+]
 
 function switchIt() {
     addActiveTag(event)
@@ -153,61 +158,16 @@ function checkTimeName() {
 }
 
 function switchDaily() {
-    timeWork.children[0].children[0].textContent = data[0].timeframes.daily.current
-    timeWork.children[1].children[0].textContent = data[0].timeframes.daily.previous
-
-    timePlay.children[0].children[0].textContent = data[1].timeframes.daily.current
-    timePlay.children[1].children[0].textContent = data[1].timeframes.daily.previous
-
-    timeStudy.children[0].children[0].textContent = data[2].timeframes.daily.current
-    timeStudy.children[1].children[0].textContent = data[2].timeframes.daily.previous
-
-    timeExercise.children[0].children[0].textContent = data[3].timeframes.daily.current
-    timeExercise.children[1].children[0].textContent = data[3].timeframes.daily.previous
-
-    timeSocial.children[0].children[0].textContent = data[4].timeframes.daily.current
-    timeSocial.children[1].children[0].textContent = data[4].timeframes.daily.previous
-
-    timeSelfcare.children[0].children[0].textContent = data[5].timeframes.daily.current
-    timeSelfcare.children[1].children[0].textContent = data[5].timeframes.daily.previous
+  for (const timeType in time)  {
+    `${timeType}.children[0].children[0].textContent = dataJson[0].timeframes.daily.current`
+    `${timeType}.children[1].children[0].textContent = dataJson[0].timeframes.daily.previous`
+  }
 }
 
 function switchWeekly() {
-    timeWork.children[0].children[0].textContent = data[0].timeframes.weekly.current
-    timeWork.children[1].children[0].textContent = data[0].timeframes.weekly.previous
-
-    timePlay.children[0].children[0].textContent = data[1].timeframes.weekly.current
-    timePlay.children[1].children[0].textContent = data[1].timeframes.weekly.previous
-
-    timeStudy.children[0].children[0].textContent = data[2].timeframes.weekly.current
-    timeStudy.children[1].children[0].textContent = data[2].timeframes.weekly.previous
-
-    timeExercise.children[0].children[0].textContent = data[3].timeframes.weekly.current
-    timeExercise.children[1].children[0].textContent = data[3].timeframes.weekly.previous
-
-    timeSocial.children[0].children[0].textContent = data[4].timeframes.weekly.current
-    timeSocial.children[1].children[0].textContent = data[4].timeframes.weekly.previous
-
-    timeSelfcare.children[0].children[0].textContent = data[5].timeframes.weekly.current
-    timeSelfcare.children[1].children[0].textContent = data[5].timeframes.weekly.previous
+   
 }
 
 function switchMonthly() {
-    timeWork.children[0].children[0].textContent = data[0].timeframes.monthly.current
-    timeWork.children[1].children[0].textContent = data[0].timeframes.monthly.previous
-
-    timePlay.children[0].children[0].textContent = data[1].timeframes.monthly.current
-    timePlay.children[1].children[0].textContent = data[1].timeframes.monthly.previous
-
-    timeStudy.children[0].children[0].textContent = data[2].timeframes.monthly.current
-    timeStudy.children[1].children[0].textContent = data[2].timeframes.monthly.previous
-
-    timeExercise.children[0].children[0].textContent = data[3].timeframes.monthly.current
-    timeExercise.children[1].children[0].textContent = data[3].timeframes.monthly.previous
-
-    timeSocial.children[0].children[0].textContent = data[4].timeframes.monthly.current
-    timeSocial.children[1].children[0].textContent = data[4].timeframes.monthly.previous
-
-    timeSelfcare.children[0].children[0].textContent = data[5].timeframes.monthly.current
-    timeSelfcare.children[1].children[0].textContent = data[5].timeframes.monthly.previous
+    
 }
