@@ -157,12 +157,25 @@ function checkTimeName() {
     }
 }
 
-function switchDaily() {
-  for (const timeType in time)  {
-    `${timeType}.children[0].children[0].textContent = dataJson[0].timeframes.daily.current`
-    `${timeType}.children[1].children[0].textContent = dataJson[0].timeframes.daily.previous`
+/* function switchDaily() {
+  for (let i = 0; i < time.length; i++)  {
+    console.log(i)
+    `time.${timeType}.children[0].children[0].textContent = dataJson[0].timeframes.daily.current`
+    //`time${timeType}.children[0].children[0].textContent = dataJson[0].timeframes.daily.current`
+    //`time${timeType}.children[1].children[0].textContent = dataJson[0].timeframes.daily.previous`
   }
-}
+} */
+
+ function switchDaily() {
+  for (const timeType in time)  {
+    
+    //console.log(`${timeType}: ${time}`)
+    console.log(`${time}.${timeType}`)
+    //`time.${timeType}.children[0].children[0].textContent = dataJson[0].timeframes.daily.current`
+    //`time${timeType}.children[0].children[0].textContent = dataJson[0].timeframes.daily.current`
+    //`time${timeType}.children[1].children[0].textContent = dataJson[0].timeframes.daily.previous`
+  }
+} 
 
 function switchWeekly() {
    
