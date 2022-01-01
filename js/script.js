@@ -11,7 +11,7 @@ const timeSocial = document.getElementById('timeSocial')
 const timeSelfcare = document.getElementById('timeSelfcare')
 
 
-const time = {
+const timeActivities = {
   work: document.getElementById('timeWork'),
   play: document.getElementById('timePlay'),
   study: document.getElementById('timeStudy'),
@@ -166,11 +166,20 @@ function checkTimeName() {
   }
 } */
 
+let keyTime = Object.keys(timeActivities)
+
+keyTime.forEach((key, property) => {
+  
+}); 
+
+console.log(timeActivities.exercise.children[0])
+
  function switchDaily() {
-  for (const timeType in time)  {
+  for (const timeType in timeActivities)  {
     
     //console.log(`${timeType}: ${time}`)
-    console.log(`${time}.${timeType}`)
+    
+    console.log(`timeActivities.${timeType}`)
     //`time.${timeType}.children[0].children[0].textContent = dataJson[0].timeframes.daily.current`
     //`time${timeType}.children[0].children[0].textContent = dataJson[0].timeframes.daily.current`
     //`time${timeType}.children[1].children[0].textContent = dataJson[0].timeframes.daily.previous`
