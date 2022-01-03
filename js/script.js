@@ -179,7 +179,7 @@ console.log(timeActivities.exercise.children[0])
     
     //console.log(`${timeType}: ${time}`)
     
-    console.log(`timeActivities.${timeType}`)
+    console.log(timeActivities.${timeType})
     //`time.${timeType}.children[0].children[0].textContent = dataJson[0].timeframes.daily.current`
     //`time${timeType}.children[0].children[0].textContent = dataJson[0].timeframes.daily.current`
     //`time${timeType}.children[1].children[0].textContent = dataJson[0].timeframes.daily.previous`
