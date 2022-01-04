@@ -197,7 +197,7 @@ body {
 }
 
 .work-bg-img {
-  background: url(/images/icon-work.svg) no-repeat scroll right center;
+  background: url("../images/icon-work.svg") no-repeat scroll right center;
 }
 
 .play {
@@ -206,7 +206,7 @@ body {
 }
 
 .play-bg-img {
-  background: url(/images/icon-play.svg) no-repeat scroll right center;
+  background: url("../images/icon-play.svg") no-repeat scroll right center;
 }
 
 .study {
@@ -215,7 +215,7 @@ body {
 }
 
 .study-bg-img {
-  background: url(/images/icon-study.svg) no-repeat scroll right center;
+  background: url("../images/icon-study.svg") no-repeat scroll right center;
 }
 
 .exercise {
@@ -224,7 +224,7 @@ body {
 }
 
 .exercise-bg-img {
-  background: url(/images/icon-exercise.svg) no-repeat scroll right center;
+  background: url("../images/icon-exercise.svg") no-repeat scroll right center;
 }
 
 .social {
@@ -233,7 +233,7 @@ body {
 }
 
 .social-bg-img {
-  background: url(/images/icon-social.svg) no-repeat scroll right center;
+  background: url("../images/icon-social.svg") no-repeat scroll right center;
 }
 
 .selfcare {
@@ -242,7 +242,7 @@ body {
 }
 
 .selfcare-bg-img {
-  background: url(/images/icon-self-care.svg) no-repeat scroll right center;
+  background: url("../images/icon-self-care.svg") no-repeat scroll right center;
 }
 
 @media only screen and (min-width: 1000px) {
