@@ -8,17 +8,9 @@ const timePlay = document.getElementById('timePlay')
 const timeStudy = document.getElementById('timeStudy')
 const timeExercise = document.getElementById('timeExercise')
 const timeSocial = document.getElementById('timeSocial')
-const timeSelfcare = document.getElementById('timeSelfcare')
+const timeSelfcare = document.getElementById('timeSelfcare') 
 
-
-const timeActivities = {
-  work: document.getElementById('timeWork'),
-  play: document.getElementById('timePlay'),
-  study: document.getElementById('timeStudy'),
-  exercise: document.getElementById('timeExercise'),
-  social: document.getElementById('timeSocial'),
-  selfcare: document.getElementById('timeSelfcare')
-}
+const timeActivities = [timeWork, timePlay, timeStudy, timeExercise, timeSocial, timeSelfcare]
 
 daily.addEventListener('click', switchIt)
 weekly.addEventListener('click', switchIt)
@@ -157,39 +149,23 @@ function checkTimeName() {
     }
 }
 
-/* function switchDaily() {
-  for (let i = 0; i < time.length; i++)  {
-    console.log(i)
-    `time.${timeType}.children[0].children[0].textContent = dataJson[0].timeframes.daily.current`
-    //`time${timeType}.children[0].children[0].textContent = dataJson[0].timeframes.daily.current`
-    //`time${timeType}.children[1].children[0].textContent = dataJson[0].timeframes.daily.previous`
-  }
-} */
-
-let keyTime = Object.keys(timeActivities)
-
-keyTime.forEach((key, property) => {
-  
-}); 
-
-console.log(timeActivities.exercise.children[0])
-
- function switchDaily() {
-  for (const timeType in timeActivities)  {
-    
-    //console.log(`${timeType}: ${time}`)
-    
-    console.log(timeActivities.${timeType})
-    //`time.${timeType}.children[0].children[0].textContent = dataJson[0].timeframes.daily.current`
-    //`time${timeType}.children[0].children[0].textContent = dataJson[0].timeframes.daily.current`
-    //`time${timeType}.children[1].children[0].textContent = dataJson[0].timeframes.daily.previous`
+function switchDaily() {
+  for (let i = 0; i < timeActivities.length; i++) {
+    timeActivities[i].children[0].children[0].textContent = dataJson[i].timeframes.daily.current
+    timeActivities[i].children[1].children[0].textContent = dataJson[i].timeframes.daily.previous
   }
 } 
 
 function switchWeekly() {
-   
+  for (let i = 0; i < timeActivities.length; i++) {
+    timeActivities[i].children[0].children[0].textContent = dataJson[i].timeframes.weekly.current
+    timeActivities[i].children[1].children[0].textContent = dataJson[i].timeframes.weekly.previous
+  }
 }
 
 function switchMonthly() {
-    
+  for (let i = 0; i < timeActivities.length; i++) {
+    timeActivities[i].children[0].children[0].textContent = dataJson[i].timeframes.monthly.current
+    timeActivities[i].children[1].children[0].textContent = dataJson[i].timeframes.monthly.previous
+  }
 }
