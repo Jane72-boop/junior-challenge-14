@@ -137,14 +137,10 @@ function addActiveTag(event) {
 
 function checkTimeName() {
     if (event.target.id === 'daily') {
-        console.log('daily')
         switchDaily()
-
     } else if (event.target.id === 'weekly') {
-        console.log('weekly')
         switchWeekly()
     } else {
-        console.log('monthly')
         switchMonthly()
     }
 }
